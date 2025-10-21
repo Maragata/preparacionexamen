@@ -1,0 +1,172 @@
+/* Estilos Generales y Centrado */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Para centrar el H1 también */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* Contenedor Principal del Quiz */
+#quiz-container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* 1. Contenedor de Puntuación (flexbox para ponerlos lado a lado) */
+#puntuacion-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para móviles */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+#puntuacion-container p {
+    margin: 5px 10px 5px 0; /* Espaciado */
+    font-weight: bold;
+}
+
+#progreso {
+    color: #007BFF;
+}
+#correctas {
+    color: #28a745; /* Verde */
+}
+#incorrectas {
+    color: #dc3545; /* Rojo */
+}
+
+/* 2. Pregunta y Opciones */
+#pregunta {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+#opciones-respuesta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espacio entre botones */
+}
+
+#opciones-respuesta button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border: 2px solid #dfe6e9;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+/* Efecto hover (solo si no está deshabilitado) */
+#opciones-respuesta button:hover:not(:disabled) {
+    background-color: #e9ecef;
+    border-color: #b2bec3;
+    transform: translateY(-1px);
+}
+
+#opciones-respuesta button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* 3. Clases .correct e .incorrect (para botones) */
+.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    font-weight: bold;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/* 4. Feedback (con clases para color) */
+#feedback {
+    font-size: 1.1em;
+    font-weight: bold;
+    min-height: 1.3em; /* Reserva espacio para que no salte */
+    margin-top: 15px;
+}
+
+#feedback.correct {
+    color: #28a745;
+}
+
+#feedback.incorrect {
+    color: #dc3545;
+}
+
+/* 5. Botón Siguiente (Oculto por defecto) */
+#siguiente-btn {
+    display: none; 
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#siguiente-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón de reiniciar (usado al final) */
+#quiz-container button.reiniciar {
+    background-color: #28a745;
+}
+#quiz-container button.reiniciar:hover {
+    background-color: #218838;
+}
+/* ... (Todo tu CSS existente) ... */
+
+/* Estilo para el botón de reiniciar (usado al final) */
+#quiz-container button.reiniciar {
+    background-color: #28a745;
+}
+#quiz-container button.reiniciar:hover {
+    background-color: #218838;
+}
+
+/* * NUEVO: Estilo para el mensaje de felicitación
+ */
+.felicitacion {
+    display: block; /* Para que ocupe su propia línea */
+    font-weight: bold;
+    color: #155724; /* Verde oscuro (el mismo que .correct) */
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+}

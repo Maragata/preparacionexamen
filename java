@@ -1,3 +1,4 @@
+
 // --- 1. PREPARACION EXAMEN (PREGUNTAS DEL PDF) ---
 const preguntas = [
     // --- EPÍGRAFE 1: MARKETING DIGITAL ---
@@ -16,7 +17,7 @@ const preguntas = [
         opciones: ["Aumentar la visibilidad online.", "Crear oportunidades comerciales.", "Eliminar la competencia en el mercado."],
         respuestaCorrecta: "Eliminar la competencia en el mercado."
     },
-      ];
+    ];
 
 // --- 2. REFERENCIAS A ELEMENTOS DEL DOM ---
 const preguntaEl = document.getElementById('pregunta');

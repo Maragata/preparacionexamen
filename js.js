@@ -13,8 +13,8 @@ const preguntas = [
     },
     {
         pregunta: "3. Cuando hablamos de un aplazamiento en el pago que un proveedor concede a una empresa estamos hablando de ...?",
-        opciones: ["Aumentar la visibilidad online.", "Crear oportunidades comerciales.", "Eliminar la competencia en el mercado."],
-        respuestaCorrecta: "Eliminar la competencia en el mercado."
+        opciones: ["Descuento de efectos comerciales.", "Confirming.", "Crédito comercial.","Crédito bancacrio"],
+        respuestaCorrecta: "Crédito comercial."
     },
     {
         pregunta: "4. La mezcla de marketing está compuesta por:",

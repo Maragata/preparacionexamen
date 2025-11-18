@@ -9,7 +9,7 @@ const preguntas = [
     {
         pregunta: "2. Para calcular el capital final según la ley de la capitalización simple tenemos que ...:",
         opciones: ["Sumar los intereses totales al capital inicial.", "Restar los intereses totales al capital inicial.", "Multiplicar el tipo de interés por el capital final.","Multiplicar el tipo de interés por el plazo."],
-        respuestaCorrecta: "Adapta las técnicas clásicas a entornos digitales y permite medir resultados en tiempo real."
+        respuestaCorrecta: "Multiplicar el tipo de interés por el plazo.."
     },
     {
         pregunta: "3. Cuando hablamos de un aplazamiento en el pago que un proveedor concede a una empresa estamos hablando de ...?",

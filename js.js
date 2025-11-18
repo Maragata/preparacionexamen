@@ -2,17 +2,17 @@
 const preguntas = [
     // --- EPÍGRAFE 1: MARKETING DIGITAL ---
     {
-        pregunta: "1. El marketing tiene como objetivo principal:",
-        opciones: ["Mejorar la logística de la empresa.", "Conectar lo que el cliente valora con lo que la empresa ofrece.", "Sustituir las ventas físicas por ventas online."],
-        respuestaCorrecta: "Conectar lo que el cliente valora con lo que la empresa ofrece."
+        pregunta: "1. ¿Qué significa descontar un efecto comercial?:",
+        opciones: ["Pedir un anticipo al banco.", "Cobrarlo después de la fecha.", "Aplazar su pago.","Cancelarlo antes de tiempo"],
+        respuestaCorrecta: "Pedir un anticipo al banco."
     },
     {
-        pregunta: "2. El marketing digital se diferencia del tradicional porque:",
-        opciones: ["Se centra en el contacto personal cara a cara.", "Adapta las técnicas clásicas a entornos digitales y permite medir resultados en tiempo real.", "Solo se aplica en grandes empresas."],
+        pregunta: "2. Para calcular el capital final según la ley de la capitalización simple tenemos que ...:",
+        opciones: ["Sumar los intereses totales al capital inicial.", "Restar los intereses totales al capital inicial.", "Multiplicar el tipo de interés por el capital final.","Multiplicar el tipo de interés por el plazo."],
         respuestaCorrecta: "Adapta las técnicas clásicas a entornos digitales y permite medir resultados en tiempo real."
     },
     {
-        pregunta: "3. ¿Cuál de los siguientes NO es un objetivo del marketing digital?",
+        pregunta: "3. Cuando hablamos de un aplazamiento en el pago que un proveedor concede a una empresa estamos hablando de ...?",
         opciones: ["Aumentar la visibilidad online.", "Crear oportunidades comerciales.", "Eliminar la competencia en el mercado."],
         respuestaCorrecta: "Eliminar la competencia en el mercado."
     },

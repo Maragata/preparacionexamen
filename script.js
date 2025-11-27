@@ -1,4 +1,4 @@
-DE PREGUNTAS EXTRAÍDO DEL DOCUMENTO
+//DE PREGUNTAS EXTRAÍDO DEL DOCUMENTO
 // Nota: El asterisco '*' al final de la opción indica la correcta.
 
 const fullQuestionBank = [

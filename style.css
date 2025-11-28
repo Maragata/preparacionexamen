@@ -1,9 +1,11 @@
 :root {
-    --primary: #0066FF;
-    --primary-dark: #0052cc;
-    --success: #10b981;
-    --error: #ef4444;
-    --bg: #f3f4f6;
+    /* CAMBIO: Azul brillante */
+    --primary: #0066FF;      /* Azul principal */
+    --primary-dark: #0052cc; /* Azul más oscuro para el hover */
+    
+    --success: #10b981;      /* Verde para aciertos */
+    --error: #ef4444;        /* Rojo para fallos */
+    --bg: #f0f4f8;           /* Fondo gris muy azulado */
     --card: #ffffff;
     --text: #1f2937;
 }
@@ -25,7 +27,7 @@ body {
     max-width: 600px;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px -5px rgba(0, 102, 255, 0.15); /* Sombra con toques azules */
     text-align: center;
 }
 
@@ -96,7 +98,7 @@ h2 { margin-bottom: 1.5rem; font-size: 1.25rem; }
 
 .option-btn:hover:not(:disabled) {
     border-color: var(--primary);
-    background-color: #eef2ff;
+    background-color: #e6f0ff; /* Fondo azul muy clarito al pasar el mouse */
 }
 
 .option-btn:disabled { cursor: default; }

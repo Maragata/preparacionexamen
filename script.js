@@ -317,7 +317,6 @@ function loadNextQuestion() {
     currentIndex++;
     showQuestion();
 }
-
 function handleEndOfRound() {
     // Si hay preguntas en la cola de fallos (wrongQueue)
     if (wrongQueue.length > 0) {
@@ -327,9 +326,40 @@ function handleEndOfRound() {
         currentIndex = 0;
         roundCount++;
         
-        alert(`Has terminado la ronda. Tienes ${currentQueue.length} preguntas falladas que debes repetir.`);
-        updateRoundDisplay();
-        showQuestion();
+        // --- AQUÍ ESTÁ EL CAMBIO CON SWEETALERT2 ---
+        Swal.fire({
+            title: '¡Ronda terminada!',
+            text: `Tienes ${currentQueue.length} preguntas pendientes para repasar. ¡Vamos a intentarlo de nuevo!`,
+            icon: 'info',
+            confirmButtonText: 'Continuar',
+            confirmButtonColor: '#0066FF', // Tu color azul
+            allowOutsideClick: false,      // Obliga a dar clic en el botón
+            allowEscapeKey: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                updateRoundDisplay();
+                showQuestion();
+            }
+        });
+        // ---------------------------------------------
+
+    } else {
+        // No hay fallos, juego terminado
+        
+        // Opcional: También puedes poner un SweetAlert bonito al ganar
+        Swal.fire({
+            title: '¡Felicidades!',
+            text: 'Has completado todas las preguntas correctamente.',
+            icon: 'success',
+            confirmButtonText: 'Genial',
+            confirmButtonColor: '#10b981' // Verde éxito
+        }).then(() => {
+            gameScreen.classList.add('hidden');
+            endScreen.classList.remove('hidden');
+            totalRoundsSpan.textContent = roundCount;
+        });
+    }
+}
     } else {
         // No hay fallos, juego terminado
         gameScreen.classList.add('hidden');

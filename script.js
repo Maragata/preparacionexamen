@@ -359,8 +359,7 @@ function handleEndOfRound() {
             totalRoundsSpan.textContent = roundCount;
         });
     }
-}
-    } else {
+} else {
         // No hay fallos, juego terminado
         gameScreen.classList.add('hidden');
         endScreen.classList.remove('hidden');
